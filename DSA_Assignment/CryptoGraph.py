@@ -42,6 +42,7 @@ def menu(assetGraph):
 
         elif(option == 4):
             print("Setting asset filter\n")
+            setAssetFilter(assetGraph)
 
         elif(option == 5):
             print("Asset overview")
@@ -135,7 +136,7 @@ def setAssetFilter(graph):
         tempSymbol = input("Please type a valid asset symbol or type x to exit")
         for node in graph.linkedList:
             if(node.value.symbol == tempSymbol):
-                node.toString()
+                node.toSting()
 
 
 def assetOverview(graph):
